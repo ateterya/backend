@@ -1,0 +1,19 @@
+group 'backend'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.springframework', name: 'spring-core', version: '4.3.11.RELEASE'
+    compile group: 'org.springframework', name: 'spring-web', version: '4.3.11.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.11.RELEASE'
+}
